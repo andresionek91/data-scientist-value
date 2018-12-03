@@ -4,10 +4,25 @@
 <html data-wf-page="5bfd8bb59342795b3c7c18ac" data-wf-site="5bfd8bb5934279175c7c18ab">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130354259-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-130354259-1');
+    </script>
+
   <meta charset="utf-8">
   <title>What Makes a Data Scientist Valuable?</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
+  <meta property="og:title" content="What Makes a Data Scientist Valuable?">
+  <meta property="og:description" content="Calculates the probability of a Data Scientist earn more than USD 100k per year.">
+  <meta property="og:image" content="https://imgur.com/P5QwBzq">
+  <meta property="og:url" content="http://www.data-scientist-value.com">
+
   <link href={{url_for('static',filename="css/normalize.css")}} rel="stylesheet" type="text/css">
   <link href={{url_for('static',filename="css/webflow.css")}} rel="stylesheet" type="text/css">
   <link href={{url_for('static',filename="css/what-makes-a-kaggler-valuable.webflow.css")}} rel="stylesheet" type="text/css">
@@ -214,7 +229,11 @@
               </div>
             </div>
           </div><input type="submit" value="Calculate Your Score" data-wait="calculating..." class="submit-button-2 w-button">
-          <div class="text-block-4"><em class="italic-text-2">This website and the model was created by André Sionek. Check out my work on:<br></em><a href="https://github.com/andresionek91" target="_blank"><strong>GitHub</strong></a><strong>, </strong><a href="https://www.kaggle.com/andresionek" target="_blank"><strong>Kaggle</strong></a><strong>, </strong><a href="https://www.linkedin.com/in/andresionek/" target="_blank"><strong>LinkedIn</strong></a><strong>, </strong><a href="https://medium.com/@andresionek91" target="_blank"><strong>Medium</strong></a></div>
+          <div class="text-block-4">This website and the model was created by André Sionek. <br><em>Check out my work on:<br></em><a href="https://github.com/andresionek91" target="_blank"><strong>GitHub</strong></a><strong>, </strong><a href="https://www.kaggle.com/andresionek" target="_blank"><strong>Kaggle</strong></a><strong>, </strong><a href="https://www.linkedin.com/in/andresionek/" target="_blank"><strong>LinkedIn</strong></a><strong>, </strong><a href="#"><strong>Medium<br><br><br></strong></a><em>I&#x27;m storing all answer and calculated scores, the data might be released later on Kaggle.com. No personal information is stored.</em></div>
+          <div class="div-block-5">
+            <div class="text-block-5">{{ qty }}<br></div>
+            <div class="text-block-6">calculated scores so far</div>
+          </div>
         </form>
         <div class="w-form-fail">
           <div class="text-block-3">Oops! Something went wrong, try again in a few minutes. </div>

@@ -291,6 +291,7 @@
 .container {
   position: relative;
   margin-top: 100px;
+  padding-top: 0px;
   background-image: url('../images/Untitled-1.png');
   background-position: 50% 50%;
   background-size: 940px;
@@ -439,6 +440,7 @@
 }
 
 .text-block-3 {
+  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -514,6 +516,7 @@
 .text-block-4 {
   padding-top: 80px;
   color: #696d8c;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -604,5 +607,34 @@
 
 .link-5 {
   color: rgba(35, 82, 182, .71);
+}
+
+.div-block-5 {
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#676767), to(#676767)), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .31)), to(rgba(0, 0, 0, .31)));
+  background-image: linear-gradient(180deg, #676767, #676767), linear-gradient(180deg, rgba(0, 0, 0, .31), rgba(0, 0, 0, .31));
+}
+
+.text-block-5 {
+  margin-bottom: 0px;
+  padding: 30px 10px 10px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+
+.text-block-6 {
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  color: #fff;
+  text-align: center;
 }
 

@@ -8,7 +8,11 @@ application = Flask(__name__)
 @application.route('/')
 @application.route('/index')
 def home():
-    return render_template('index.html')
+    #counting the quantity of objects on S3 bucket
+    url = 'https://wucg3iz2r4.execute-api.us-east-2.amazonaws.com/default/count-kaggle-top20-objects'
+    r = requests.get(url).json()
+
+    return render_template('index.html', qty=r['size'])
 
 
 @application.route('/score', methods=['POST', 'GET'])
