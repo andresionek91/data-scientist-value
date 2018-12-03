@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Sun Dec 02 2018 22:17:05 GMT+0000 (UTC)  -->
+<html data-wf-page="5bfd8bb59342795b3c7c18ac" data-wf-site="5bfd8bb5934279175c7c18ab">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sionek Project</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href={{url_for('static',filename="css/normalize.css")}} rel="stylesheet" type="text/css">
+  <link href={{url_for('static',filename="css/webflow.css")}} rel="stylesheet" type="text/css">
+  <link href={{url_for('static',filename="css/what-makes-a-kaggler-valuable.webflow.css")}} rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Varela Round:400"]  }});</script>
+  <script src="https://use.typekit.net/qfr7cbk.js" type="text/javascript"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href={{url_for('static',filename="images/Asset-12x32.png")}} rel="shortcut icon" type="image/x-icon">
+  <link href={{url_for('static',filename="images/Asset-12x256.png")}} rel="apple-touch-icon">
+</head>
+
+<body class="body">
+  <div class="section">
+    <div class="container w-container">
+      <h1 class="heading">What Makes a Data Scientist Valuable?</h1>
+      <h3 class="heading-3"><strong class="bold-text">Ever wondered what you should do to add some weight to your Data Science resume? </strong><br></h3>
+      <p class="paragraph">Many of us already have a good notion of what is important to build a strong data science career and increase our compensation. But I personally, have never seen a systematic, data based, approach to that problem. <br><br>That&#x27;s why I built a model to predict the probability of a data scientist earn more than U$ 100k per year.<br><br>The model was built over Kaggle&#x27;s <a target="_blank" href="https://www.kaggle.com/kaggle/kaggle-survey-2018" class="link-2">second annual Machine Learning and Data Science Survey</a>. You can check out <a target="_blank" href="https://www.kaggle.com/andresionek/what-makes-a-kaggler-valuable" class="link-4">here</a> how this model was developed and deployed.</p>
+      <p class="paragraph"><em class="italic-text">* All questions were extracted from Kaggle&#x27;s survey</em><br></p>
+      <h4 class="heading-2">Answer this short survey to calculate your score!</h4>
+      <div id="comp-form" class="form-block w-form">
+
+        <form id="wf-form-comp-form" name="wf-form-comp-form" data-name="comp-form" method="POST" action="/score" redirect="/score" data-redirect="/score" class="form">
+          <div><label for="Q" id="form-label-gender" class="field-label">What is your gender?</label><select id="Q-1" name="Q1" data-name="Q1" required="" class="select-field-7 w-select"><option value="">Select one...</option><option value="q1_other">Male</option><option value="q1_female">Female</option></select><label for="Q-3" id="form-label-age" class="field-label">What is your age (# years)?</label><select id="Q-2" name="Q2" data-name="Q2" required="" class="select-field-8 w-select"><option value="">Select one...</option><option value="q2_18_21">18-21</option><option value="q2_22_24">22-24</option><option value="q2_25_29">25-29</option><option value="q2_30_34">30-34</option><option value="q2_35_39">35-39</option><option value="q2_40_44">40-44</option><option value="q2_other">45-49</option><option value="q2_other">50-54</option><option value="q2_other">55-59</option><option value="q2_other">60-69</option></select><label for="cnpj" id="form-label-cnpj" class="field-label">In which country do you currently reside?</label></div><select id="Q-3" name="Q3" data-name="Q3" required="" class="select-field-9 w-select"><option value="">Select one...</option><option value="q3_other">Australia</option><option value="q3_other">Brazil</option><option value="q3_other">Canada</option><option value="q3_china">China</option><option value="q3_other">France</option><option value="q3_other">Germany</option><option value="q3_india">India</option><option value="q3_other">Italy</option><option value="q3_other">Japan</option><option value="q3_other">Mexico</option><option value="q3_other">Russia</option><option value="q3_other">Spain</option><option value="q3_other">United Kingdom</option><option value="q3_united_">United States of America</option><option value="q3_other">Other</option></select><label for="Q-4" id="form-label-cnpj" class="field-label">What is the highest level of formal education that you have attained or plan to attain within the next 2 years?</label><select id="Q-4" name="Q4" required="" data-name="Q4" class="select-field-10 w-select"><option value="">Select one...</option><option value="q4_other">No formal education past high school</option><option value="q4_other">Some college/university study without earning a bachelor’s degree</option><option value="q4_other">Professional degree</option><option value="q4_bachelo">Bachelor&#x27;s degree</option><option value="q4_other">Master&#x27;s degree</option><option value="doctoral">Doctoral degree</option></select><label for="Q-14" id="form-label-cnpj" class="field-label">Select the title most similar to your current role (or most recent title if retired)?</label><select id="Q-6" name="Q6" required="" data-name="Q6" class="select-field-10 w-select"><option value="">Select one...</option><option value="q6_other2">Business Analyst</option><option value="q6_other2">Consultant</option><option value="q6_data_an">Data Analyst</option><option value="q6_other2">Data Engineer</option><option value="q6_data_sc">Data Scientist</option><option value="q6_researc">Research Scientist</option><option value="q6_softwar">Software Engineer</option><option value="q6_student">Student</option><option value="q6_other">Other</option></select><label for="Q-15" id="form-label-cnpj" class="field-label">In what industry is your current employer/contract (or your most recent employer if retired)?</label><select id="Q-7" name="Q7" required="" data-name="Q7" class="select-field-10 w-select"><option value="">Select one...</option><option value="q7_academi">Academics/Education</option><option value="q7_account">Accounting/Finance</option><option value="q7_compute">Computers/Technology</option><option value="q7_other2">Government/Public Service</option><option value="q7_other2">I am a student</option><option value="q7_other2">Insurance/Risk Assessment</option><option value="q7_other2">Medical/Pharmaceutical</option><option value="q7_other2">Online Services/Internet based</option><option value="q7_other">Other</option></select><label for="Q-14" id="form-label-cnpj" class="field-label">How many years of experience do you have in your current role?</label><select id="Q-8" name="Q8" required="" data-name="Q8" class="select-field-10 w-select"><option value="">Select one...</option><option value="q8_0_1">0-1</option><option value="q8_1_2">1-2</option><option value="q8_2_3">2-3</option><option value="q8_3_4">3-4</option><option value="q8_4_5">4-5</option><option value="q8_5_10">5-10</option><option value="q8_10_15">10-15</option><option value="q8_other">15+</option></select><label for="Q-14" id="form-label-cnpj" class="field-label">Does your current employer incorporate machine learning methods into their business?</label><select id="Q-10" name="Q10" required="" data-name="Q10" class="select-field-10 w-select"><option value="">Select one...</option><option value="q10_we_hav">We have well established ML methods (i.e., models in production for more than 2 years)</option><option value="q10_we_rec">We recently started using ML methods (i.e., models in production for less than 2 years)</option><option value="q10_we_use">We use ML methods for generating insights (but do not put working models into production)</option><option value="q10_we_are">We are exploring ML methods (and may one day put a model into production)</option><option value="q10_no_we_">No (we do not use ML methods)</option><option value="q10_i_do_n">I Do Not Know</option></select>
+          <div id="Q-11" class="w-embed">
+            <div>
+              <label for="Q-8" id="form-label-Q-8" class="field-label form-label-emp_range">Select any activities that make up an important part of your role at work: (Select all that apply)</label>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q11_analyz" id="q11_analyz" class="w-checkbox-input">
+                <label for="q11_analyz" class="w-form-label">Analyze and understand data to influence product or business decisions</label>
+              </div>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q11_run_a_" id="q11_run_a_" class="w-checkbox-input">
+                <label for="q11_run_a_" class="w-form-label">Build and/or run a machine learning service that operationally improves my product or workflows</label>
+              </div>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q11_run_th" id="q11_run_th" class="w-checkbox-input">
+                <label for="q11_run_th" class="w-form-label">Build and/or run the data infrastructure that my business uses for storing, analyzing, and operationalizing data</label>
+              </div>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q11_build_" id="q11_build_" class="w-checkbox-input">
+                <label for="q11_build_" class="w-form-label">Build prototypes to explore applying machine learning to new areas</label>
+              </div>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q11_do_res" id="q11_do_res" class="w-checkbox-input">
+                <label for="q11_do_res" class="w-form-label">Do research that advances the state of the art of machine learning</label>
+              </div>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q11_none_o" id="q11_none_o" class="w-checkbox-input">
+                <label for="q11_none_o" class="w-form-label">None of these activities are an important part of my role at work</label>
+              </div>
+            </div>
+          </div>
+          <div id="Q-15" class="html-embed w-embed">
+            <div>
+              <label for="Q-9" id="form-label-Q-9" class="field-label form-label-emp_range">Which of the following cloud computing services have you used at work or school in the last 5 years? (Select all that apply)</label>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q15_amazon" id="q15_amazon" class="w-checkbox-input">
+                <label for="q15_amazon" class="w-form-label">Amazon Web Services (AWS)</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q15_google" id="q15_google" class="w-checkbox-input">
+                <label for="q15_google" class="w-form-label">Google Cloud Platform (GCP)</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q15_ibm_cl" id="q15_ibm_cl" class="w-checkbox-input">
+                <label for="q15_ibm_cl" class="w-form-label">IBM Cloud</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q15_micros" id="q15_micros" class="w-checkbox-input">
+                <label for="q15_micros" class="w-form-label">Microsoft Azure</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="other" id="other" class="w-checkbox-input">
+                <label for="other" class="w-form-label">I have not used any cloud computing services</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="other" id="other" class="w-checkbox-input">
+                <label for="other" class="w-form-label">Other</label>
+              </div>
+            </div>
+          </div>
+          <div id="Q-16" class="html-embed w-embed">
+            <div>
+              <label for="Q-10" id="form-label-Q-10" class="field-label form-label-emp_range">What programming languages do you use on a regular basis? (Select all that apply)</label>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q16_bash" id="q16_bash" class="w-checkbox-input">
+                <label for="q16_bash" class="w-form-label">Bash</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q16_c_c_" id="q16_c_c_" class="w-checkbox-input">
+                <label for="q16_c_c_" class="w-form-label">C/C++</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q16_c_net" id="q16_c_net" class="w-checkbox-input">
+                <label for="q16_c_net" class="w-form-label">C#/.NET</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q16_java" id="q16_java" class="w-checkbox-input">
+                <label for="q16_java" class="w-form-label">Java</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q16_javasc" id="q16_javasc" class="w-checkbox-input">
+                <label for="q16_javasc" class="w-form-label">Javascript/Typescript</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q16_matlab" id="q16_matlab" class="w-checkbox-input">
+                <label for="q16_matlab" class="w-form-label">MATLAB</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q16_php" id="q16_php" class="w-checkbox-input">
+                <label for="q16_php" class="w-form-label">PHP</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q16_python" id="q16_python" class="w-checkbox-input">
+                <label for="q16_python" class="w-form-label">Python</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q16_r" id="q16_r" class="w-checkbox-input">
+                <label for="q16_r" class="w-form-label">R</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q16_sas_st" id="q16_sas_st" class="w-checkbox-input">
+                <label for="q16_sas_st" class="w-form-label">SAS Stata</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q16_sql" id="q16_sql" class="w-checkbox-input">
+                <label for="q16_sql" class="w-form-label">SQL</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q16_visual" id="q16_visual" class="w-checkbox-input">
+                <label for="q16_visual" class="w-form-label">Visual Basic/VBA</label>
+              </div>
+            </div>
+          </div><label for="Q-24" id="form-label-cnpj" class="field-label">Approximately what percent of your time at work or school is spent actively coding?<br></label><select id="Q-23" name="Q23" required="" data-name="Q23" class="select-field-10 w-select"><option value="">Select one...</option><option value="q23_other">0% of my time</option><option value="q23_1_to_2">1-25% of my time</option><option value="q23_25_to_">25-49% of my time</option><option value="q23_50_to_">50-74% of my time</option><option value="q23_75_to_">75-99% of my time</option><option value="q23_other">100% of my time</option></select>
+          <div id="Q-12" class="html-embed w-embed">
+            <div>
+              <label for="Q-10" id="form-label-Q-10" class="field-label form-label-emp_range">Which types of data do you currently interact with most often at work or school? (Select all that apply)</label>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q31_catego" id="q31_catego" class="w-checkbox-input">
+                <label for="q31_catego" class="w-form-label">Categorical Data</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q31_geneti" id="q31_geneti" class="w-checkbox-input">
+                <label for="q31_geneti" class="w-form-label">Genetic Data</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q31_geospa" id="q31_geospa" class="w-checkbox-input">
+                <label for="q31_geospa" class="w-form-label">Geospatial Data</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q31_image_" id="q31_image_" class="w-checkbox-input">
+                <label for="q31_image_" class="w-form-label">Image Data</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q31_numeri" id="q31_numeri" class="w-checkbox-input">
+                <label for="q31_numeri" class="w-form-label">Numerical Data</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q31_sensor" id="q31_sensor" class="w-checkbox-input">
+                <label for="q31_sensor" class="w-form-label">Sensor Data</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q31_tabula" id="q31_tabula" class="w-checkbox-input">
+                <label for="q31_tabula" class="w-form-label">Tabular Data</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q31_text_d" id="q31_text_d" class="w-checkbox-input">
+                <label for="q31_text_d" class="w-form-label">Text Data</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q31_time_s" id="q31_time_s" class="w-checkbox-input">
+                <label for="q31_time_s" class="w-form-label">Timeseries Data</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q31_video_" id="q31_video_" class="w-checkbox-input">
+                <label for="q31_video_" class="w-form-label">Video Data</label>
+              </div>
+            </div>
+          </div>
+          <div id="Q-13" class="html-embed w-embed">
+            <div>
+              <label for="Q-10" id="form-label-Q-10" class="field-label form-label-emp_range">What metrics do you or your organization use to determine whether or not your models were successful? (Select all that apply)</label>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q42_revenu" id="q42_revenu" class="w-checkbox-input">
+                <label for="q42_revenu" class="w-form-label">Revenue and/or business goals</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q42_accura" id="q42_accura" class="w-checkbox-input">
+                <label for="q42_accura" class="w-form-label">Metrics that consider accuracy</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q42_unfair" id="q42_unfair" class="w-checkbox-input">
+                <label for="q42_unfair" class="w-form-label">Metrics that consider unfair bias</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="q42_not_ap" id="q42_not_ap" class="w-checkbox-input">
+                <label for="q42_not_ap" class="w-form-label">Not applicable (I am not involved with an organization that builds ML models)</label>
+              </div><br>
+              <div class="checkbox-field-6 w-checkbox">
+                <input type="checkbox" name="other" id="other" class="w-checkbox-input">
+                <label for="other" class="w-form-label">Other</label>
+              </div>
+            </div>
+          </div><input type="submit" value="Calculate Your Score" data-wait="calculating..." class="submit-button-2 w-button">
+          <div class="text-block-4"><em class="italic-text-2">This website and the model was created by André Sionek. Check out my work on:<br></em><a href="https://github.com/andresionek91" target="_blank"><strong>GitHub</strong></a><strong>, </strong><a href="https://www.kaggle.com/andresionek" target="_blank"><strong>Kaggle</strong></a><strong>, </strong><a href="https://www.linkedin.com/in/andresionek/" target="_blank"><strong>LinkedIn</strong></a><strong>, </strong><a href="https://medium.com/@andresionek91" target="_blank"><strong>Medium</strong></a></div>
+        </form>
+        <div class="w-form-fail">
+          <div class="text-block-3">Oops! Something went wrong, try again in a few minutes. </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-container"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src={{url_for('static',filename="js/webflow.js")}} type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
