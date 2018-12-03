@@ -1,12 +1,12 @@
 branch-defaults:
-  default:
+  master:
     environment: data-scientist-value-dev
     group_suffix: null
 global:
   application_name: data-scientist-value
   branch: null
   default_ec2_keyname: null
-  default_platform: Python 3.4 (Preconfigured - Docker)
+  default_platform: Python 3.6
   default_region: us-east-2
   include_git_submodules: true
   instance_profile: null
@@ -14,5 +14,5 @@ global:
   platform_version: null
   profile: eb-cli
   repository: null
-  sc: null
+  sc: git
   workspace_type: Application

@@ -3,14 +3,14 @@ import requests
 from treat_data import treat_input
 import json
 
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route('/')
+@application.route('/')
 def home():
     return render_template('index.html')
 
 
-@app.route('/score', methods=['POST', 'GET'])
+@application.route('/score', methods=['POST', 'GET'])
 def score():
     if request.method == 'POST':
         result = request.form
@@ -25,7 +25,7 @@ def score():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    application.run(debug=True)
 
 
 

@@ -113,3 +113,12 @@ dmypy.json
 # Pyre type checker
 .pyre/
 *.xml
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+*.xml
+.DS_Store
+.DS_Store
+*.xml
