@@ -20,7 +20,6 @@ def score():
     if request.method == 'POST':
         # get result from form and treat it
         input_json = request.form
-        #treated_input_json = treat_input(result)
 
         # create header and url
         header = {'Content-Type': 'application/x-www-form-urlencoded'}
