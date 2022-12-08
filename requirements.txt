@@ -5,7 +5,7 @@ flask-bootstrap==3.3.7.1
 jinja2==2.10
 markupsafe==1.1.0
 werkzeug==0.14.1
-certifi==2018.11.29
+certifi==2022.12.7
 chardet==3.0.4
 dominate==2.3.4
 idna==2.7
